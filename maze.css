@@ -1,0 +1,38 @@
+/* css for the div with id of "maze" */
+#maze{
+   /* initially no css */
+}
+
+/* css for the wall cells (not defined in html) */
+.cellW{
+    min-height: 20px;
+    min-width: 20px;
+    /* makes the wall cells darkblue */
+    background-color: darkblue;
+}
+
+/* css for the "empty" cells (not defined in html) */
+.cellE{
+    min-height: 20px;
+    min-width: 20px;
+}
+
+/* css for each row (not defined in html) */
+.row{
+    display: flex;
+    flex-direction: row; 
+}
+
+/* css for cells (not defined in html) */
+.cellS{
+    min-height: 20px;
+    min-width: 20px;
+}
+.player{
+    /* absolute always positions from the top and the left */
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    /* makes the player cell coral */
+    background-color: coral;
+}
