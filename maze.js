@@ -169,17 +169,21 @@ function drawMaze(){
           } 
           else{
               // otherwise... //
-              // assigns class=cellE to cell //
+              // assigns class of cellE to cell //
               cell.setAttribute("class","cellE");
-              
+              // sets the text content for cell to the value of row[j] //
               cell.textContent=row[j];
           }
+          // places cell into rowMaze //
           rowMaze.appendChild(cell);
       }
+  // places rowMaze into maze //
   maze.appendChild(rowMaze);
   }
+  // assigns new top position value to player // 
   player.style.top = topPoint+"px";
+  // assigns new left position value to player //
   player.style.left = leftPoint+"px";
 }
-
+// creates event listener. When a key is pressed, the function "movePlayer" is called // 
 document.addEventListener("keydown",movePlayer);
